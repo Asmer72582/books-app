@@ -68,3 +68,18 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+<div className='text-center row py-3 px-5 w-75 border m-auto mt-5'>
+                <div className="col-12"><h1 className=''>{Book.name}</h1></div>
+
+                <div className="col-12"> <img src={Book.cover} alt="" /></div>
+
+                <div className="col-12"><p className='card-text '>By: {Book.author}</p></div>
+
+                <div className="col-12"><p> {Book.description} </p></div>
+
+                <div className="col-6 pb-4">Price: {Book.price} /-</div>
+                <div className="col-6 pb-4">Pages: {Book.pages} </div>
+                <Button variant="contained" className='w-25 m-auto' color="" disableElevation>Back</Button>
+            </div>
