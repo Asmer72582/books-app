@@ -13,6 +13,62 @@
   }
 }
 
+.card{
+  height: 500px;
+  /* overflow: hidden; */
+}
+.card-img-top{
+  height: 200px;
+}
+textarea{
+  resize: none;
+  border: none;
+  border-bottom: 1px solid black;
+}
+#detailscard{
+  width: 700px;
+  /* display: none; */
+}
+#title{
+  height: 30px;
+  overflow: hidden;
+}
+#jadu:hover{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.center-text{
+  text-align: center;
+  font-size: 34px;
+  font-weight: 900;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#content{
+  height: 125px;
+  overflow: hidden;
+}
+.card-title{
+  font-size: 28px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: 700;
+}
+#header-card{
+border-radius: 7px;
+  height: 400px;
+  width: 100%;
+}
+#heading-text{
+  font-size: 46px;
+  font-weight: 800;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding: 10px;
+  margin: 30px 0;
+  border-bottom: 1px solid #282c34;
+  border-top: 1px solid #282c34;
+  text-transform: uppercase;
+}
+#logo{
+  font-family: 'Courier New', Courier, monospace;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -23,16 +79,59 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+a{
+  text-decoration: none;
+  /* display: none; */
+  color: black;
 
+}
+a:hover{
+  color: #282c34;
+}
+.form-card{
+  width: 50%;
+}
 .App-link {
   color: #61dafb;
 }
+#detailscard img{
+  width: 100%;
+  height: 300px;
+}
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 16px solid #282c34;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@media only screen and (max-width: 600px) {
+  #detailscard{
+    width: 100%;
   }
-  to {
-    transform: rotate(360deg);
+  #detailscard img{
+    margin: auto;
+    height: 200px;
+    width: 90%;
+  }
+  .form-card{
+    width: 95%;
   }
 }
